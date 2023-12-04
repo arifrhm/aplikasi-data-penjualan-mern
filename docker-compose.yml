@@ -1,0 +1,36 @@
+version: "3"
+
+services:
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    networks:
+      internal-network:
+        aliases:
+          - mongodb
+
+  frontend:
+    build: ./frontend
+    networks:
+      internal-network:
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+    environment:
+      - REACT_APP_BACKEND_URL=http://backend:3001
+
+  backend:
+    build: ./backend
+    networks:
+      internal-network:
+    ports:
+      - "3001:3001"
+    environment:
+      - MONGODB_URI=mongodb://mongodb:27017/your-database-name
+    depends_on:
+      - mongodb
+
+networks:
+  internal-network:

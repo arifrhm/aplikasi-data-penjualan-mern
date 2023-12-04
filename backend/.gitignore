@@ -1,0 +1,42 @@
+# Dependency directories
+node_modules/
+jspm_packages/
+web_modules/
+
+# Generated files
+.env
+.env.*
+.cache
+.nyc_output
+.log
+*.pid
+*.lcov
+*.seed
+*.lock
+*.rpt2_cache
+*.rts2_cache_*
+*.tsbuildinfo
+*.tgz
+.npm
+.eslintcache
+.stylelintcache
+.node_repl_history
+.yarn-integrity
+.yarn/
+.pnp.*
+.docusaurus/
+.serverless/
+.fusebox/
+.dynamodb/
+.tern-port
+.vscode-test
+
+# Public files
+public/
+
+# Routes and views
+routes/*
+views/*
+
+# Tests
+tests/*

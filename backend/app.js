@@ -30,8 +30,6 @@ app.get('/', (request, response) => {
 
 app.use('/api', apiRoutes);
 
-// Run the seeders
-runSeeders();
 mongoose
   .connect(mongoDBURL)
   .then(() => {
@@ -55,3 +53,5 @@ mongoose
   .catch((error) => {
     console.log(error);
   });
+
+export default app;

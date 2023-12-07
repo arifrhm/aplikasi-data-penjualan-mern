@@ -34,9 +34,5 @@ web_modules/
 # Public files
 public/
 
-# Routes and views
-routes/*
-views/*
-
 # Tests
 tests/*

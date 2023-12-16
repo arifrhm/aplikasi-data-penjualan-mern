@@ -1,6 +1,6 @@
 import chai from 'chai';
 import chaiHttp from 'chai-http';
-import app from '../index.js'; // Make sure to export your Express app instance
+import app from '../app.js'; // Make sure to export your Express app instance
 import JenisBarang from '../models/jenisBarang.model.js';
 import Barang from '../models/barang.model.js';
 

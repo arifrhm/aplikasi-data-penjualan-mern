@@ -1,4 +1,4 @@
-// CompareBarang.js
+// CompareBarang.js Component
 
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
@@ -22,8 +22,8 @@ const CompareBarang = () => {
   }, [jenisBarang, terjualType]);
 
   return (
-    <div>
-      <h1>Compare Barang</h1>
+    <div className='col-start-2 col-span-4 pl-12 pt-10 place-items-stretch'>
+      <p class="text-lg font-bold h-12">Compare</p>
       <label>
         Jenis Barang:
         <input type="text" value={jenisBarang} onChange={(e) => setJenisBarang(e.target.value)} />

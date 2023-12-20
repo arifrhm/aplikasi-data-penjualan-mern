@@ -1,6 +1,7 @@
 import React from 'react';
 import TextInput from '../components/TextInput';
 import ResponsiveButton from '../components/ResponsiveButton';
+import SelectJenisBarang from '../components/SelectJenisBarang';
 
 const AddBarang = () => {
     return (
@@ -9,7 +10,8 @@ const AddBarang = () => {
             <form
             // onSubmit={this.handleSubmit}
             >
-                    <TextInput label='Jenis Barang' value=''></TextInput>
+                    <TextInput label='Barang' value=''></TextInput>
+                    <SelectJenisBarang label='Jenis Barang'></SelectJenisBarang>
                     <ResponsiveButton></ResponsiveButton>
             </form>
         </div>

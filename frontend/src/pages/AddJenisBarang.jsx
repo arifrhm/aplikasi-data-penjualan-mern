@@ -9,7 +9,7 @@ const AddJenisBarang = () => {
             <form
             // onSubmit={this.handleSubmit}
             >
-                    <TextInput label='Jenis Barang' value=''></TextInput>
+                    <TextInput label='Jenis Barang'></TextInput>
                     <ResponsiveButton></ResponsiveButton>
             </form>
         </div>
